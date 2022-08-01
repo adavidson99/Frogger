@@ -3,15 +3,17 @@ import pygame
 
 class Car(pygame.sprite.Sprite):
     # Car class
-    def __init__(self, number):
+    def __init__(self, number, level):
         super().__init__()
 
         self.number = number
+        self.speedup = level * 20
 
         # cars image and location list
         self.cars = ['car3.gif', 'car1.gif', 'truck.gif', 'car4.gif', 'car2.gif']
         self.pos = [429, 393, 357, 321, 285]
-        self.speed = [-1.5, 1.6, -1.1, 1.3, -2]
+        self.speed = [-1.5+(-1.5/100*self.speedup), 1.6+(1.6/100*self.speedup), -1.1+(-1.1/100*self.speedup),
+                      1.3+(1.3/100*self.speedup), -2+(-2/100*self.speedup)]
 
         self.image = pygame.image.load(self.cars[number])
         self.rect = self.image.get_rect()
