@@ -53,7 +53,9 @@ class Player(pygame.sprite.Sprite):
 
     def check_bounds(self):
         # checks if the player has gone out of bounds
-        if -5 > self.rect[0] > 520 or 550 < self.rect[1] < 20:
+        if -10 > self.rect[0] or self.rect[0] > 520:
+            self.restart()
+        if 500 < self.rect[1]:
             self.restart()
 
     def float(self, obj):
@@ -70,6 +72,10 @@ class Player(pygame.sprite.Sprite):
         # checks if the player has collided with a car
         if self.rect.collidelist(car_list) != -1:
             self.restart()
+
+    def check_home(self):
+        # checks if the player has made it to the end and begin next stage if it has
+        return self.rect[1] < 20
 
     def pause(self):
         return  # keep the player waiting for 5 seconds at the start of the game
