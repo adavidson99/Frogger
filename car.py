@@ -10,7 +10,7 @@ class Car(pygame.sprite.Sprite):
         self.speedup = level * 20
 
         # cars image and location list
-        self.cars = ['car3.gif', 'car1.gif', 'truck.gif', 'car4.gif', 'car2.gif']
+        self.cars = ['sprites/car3.gif', 'sprites/car1.gif', 'sprites/truck.gif', 'sprites/car4.gif', 'sprites/car2.gif']
         self.pos = [429, 393, 357, 321, 285]
         self.speed = [-1.5+(-1.5/100*self.speedup), 1.6+(1.6/100*self.speedup), -1.1+(-1.1/100*self.speedup),
                       1.3+(1.3/100*self.speedup), -2+(-2/100*self.speedup)]
