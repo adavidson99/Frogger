@@ -3,7 +3,9 @@ Variant of the old frogger arcade game
 
 ## To Play:
 Clone repository
+
 install pygame 
+
 run main.py
 
 - Arrow keys to move the character in desired directions. 
