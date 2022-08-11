@@ -14,7 +14,7 @@ class Log(pygame.sprite.Sprite):
         # level 3 = 60% increase...
 
         # images of the objects
-        self.objects = ['small_log.png', 'medium_log.png', 'long_log.png', 'medium_log.png', 'small_log.png']
+        self.objects = ['sprites/small_log.png', 'sprites/medium_log.png', 'sprites/long_log.png', 'sprites/medium_log.png', 'sprites/small_log.png']
         self.pos = [70, 105, 140, 175, 210]
         self.speed = [-1.8+(-1.8/100*self.speedup), 1.6+(1.6/100*self.speedup), -1.2+(-1.2/100*self.speedup),
                       1.4+(1.4/100*self.speedup), -1.6+(-1.6/100*self.speedup)]

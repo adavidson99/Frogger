@@ -46,7 +46,7 @@ def generate_large_logs(log_list, level):
 def main():
     # initialize the game
     pygame.init()
-    background = pygame.image.load("frogger_background.gif")
+    background = pygame.image.load("sprites/frogger_background.gif")
     counter = 0
     level = 0
     car_list = []

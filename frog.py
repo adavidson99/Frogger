@@ -8,14 +8,14 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
 
-        self.image = pygame.image.load("frogup1.gif")
+        self.image = pygame.image.load("sprites/frogup1.gif")
         self.rect = self.image.get_rect().move(250, 475)
 
         # sprite movement dictionaries
-        self.image_up = {1: "frogup1.gif", -1: "frogup2.gif"}
-        self.image_down = {1: "frogdown1.gif", -1: "frogdown2.gif"}
-        self.image_right = {1: "frogright1.gif", -1: "frogright2.gif"}
-        self.image_left = {1: "frogleft1.gif", -1: "frogleft2.gif"}
+        self.image_up = {1: "sprites/frogup1.gif", -1: "sprites/frogup2.gif"}
+        self.image_down = {1: "sprites/frogdown1.gif", -1: "sprites/frogdown2.gif"}
+        self.image_right = {1: "sprites/frogright1.gif", -1: "sprites/frogright2.gif"}
+        self.image_left = {1: "sprites/frogleft1.gif", -1: "sprites/frogleft2.gif"}
 
         # sprite movement binary values for alternating the frog image
         self.up_value = 1
